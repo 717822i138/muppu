@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muppu - Traditional Ayurvedic Medicine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="scroll-progress" id="progress-bar"></div>
+
+    <header>
+        <div class="logo">Muppu</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Muppu Secret</a>
+            <a href="#ingredients">Herbs</a>
+            <a href="#products">Medicines</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <h1>Muppu Ayurveda</h1>
+            <p>சித்தர்களின் ரகசிய சூத்திரத்தில் உருவான காயகற்ப மருந்து</p>
+            <a href="#products" class="explore-btn">ஆராய்ந்து பார்</a>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-text" data-aos="fade-right">
+                <h2>முப்பு என்றால் என்ன?</h2>
+                <p>ஆயுர்வேதம் மற்றும் சித்த மருத்துவத்தில் 'முப்பு' என்பது வீரியம் மிக்க மூன்று உப்புகளின் கூட்டுச்சேர்க்கையாகும். இது உடலை இளமையுடனும், நோய் நொடியின்றியும் வைக்க உதவும் ஒரு உன்னத காயகற்ப மருந்தாகும்.</p>
+            </div>
+            <div class="about-img-box" data-aos="fade-left">
+                <img src="C:\Users\hp\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2026-02-03 at 5.17.52 PM.jpeg" alt="Muppu Preparation">
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients-section" id="ingredients">
+        <h2 class="section-title" data-aos="fade-up">இயற்கை மூலிகைகளின் ஆற்றல்</h2>
+        <div class="ingredients-grid">
+            
+            <div class="ingredient-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="muppu.jpg" alt="Herb 1">
+                <h3>அதிமதுரம்</h3>
+                <p>நோய் எதிர்ப்பு சக்தியை அதிகரிக்கும் மருத்துவ குணம் கொண்டது.</p>
+            </div>
+
+            <div class="ingredient-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="muppu.jpg" alt="Herb 2">
+                <h3>கடுக்காய்</h3>
+                <p>உடலில் உள்ள நச்சுக்களை நீக்கி இளமையைத் தக்கவைக்கும்.</p>
+            </div>
+
+            <div class="ingredient-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="muppu.jpg" alt="Herb 3">
+                <h3>நெல்லிக்காய்</h3>
+                <p>வைட்டமின் சி மற்றும் ஆன்டி-ஆக்ஸிடன்ட்கள் நிறைந்த கனி.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="showcase-section" id="products">
+        <div class="showcase-banner" data-aos="fade-up">
+            <div class="showcase-overlay">
+                <h2>பாரம்பரிய முறையில் தயாரிக்கப்பட்ட முப்பு திரவம்</h2>
+                <p>100% இயற்கை முறையில், எந்த ஒரு ரசாயனமும் கலக்காமல் சுத்திகரிக்கப்பட்டது.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-box" data-aos="flip-up">
+            <h2>முப்பு ஆயுர்வேத சாலா</h2>
+            <p>மின்னஞ்சல்: contact@muppu.com</p>
+            <p>தொலைபேசி: +91 98765 43210</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200, 
+            duration: 1000
+        });
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
